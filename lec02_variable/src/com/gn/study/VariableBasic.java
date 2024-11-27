@@ -32,6 +32,46 @@ public class VariableBasic {
 		String word = "Hello";
 		char first =word.charAt(0);
 		System.out.println(first);
+		
+		// 8. 업캐스팅 - (1)할당
+		// 값의 범위가 작은 데이터가 -> 본인 보다 큰 변수에 할당
+		int a = 23;
+		double b = a;
+		System.out.println(b);
+		
+		// (2) 연산
+		int c = 3;
+		double d = 20.5;
+		System.out.println(c+d);
+		
+		// 9. 다운캐스팅
+		double d_num = 13.4;
+		int i_num = 4;
+		System.out.println(d_num + i_num); 
+		System.out.println((int)d_num+i_num);
+		
+		// 10. char 형변환
+		// (1) 할당
+		char test = 'a';
+		int su = test;
+		System.out.println(su);
+		
+		// (2) 연산
+		int e = 50;
+		char f = '2';
+		System.out.println(e+f);
+		
+		// 문자 형태로 작성된 숫자를 
+		//온전한 숫자값으로 도출하는 방법
+		System.out.println(f-'0');
+		
+		// 대문자 소문자
+		System.out.println((char) ((int)'a' - 32));
+		System.out.println((int)'A');
+		
+		// 11. 상수
+		final double PI = 3.14;
+		final int MAX_SIZE = 100;
 			
 		
 	}
