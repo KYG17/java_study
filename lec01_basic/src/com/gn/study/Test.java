@@ -26,6 +26,8 @@ public class Test {
 		System.out.println("\"안녕하세요.\"");
 		// hello와 world 사이에 줄바꾸기
 		System.out.println("hello\nworld");
+		
+	
 	}
 
 }

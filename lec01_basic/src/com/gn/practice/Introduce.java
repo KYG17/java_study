@@ -21,7 +21,29 @@ public class Introduce {
 		
 		System.out.printf("안녕하세요\n");
 		System.out.printf("저는 \"%s\"입니다. \n", "김철수");
-		System.out.printf("나이는 %d살이고, mbti는 %s 입니다", 20, "istp");
+		System.out.printf("나이는 %d살이고, mbti는 %s 입니다\n", 20, "istp");
+		
+		int score = 90;
+		System.out.println(" 1 : "+score);
+		score = 95;
+		System.out.println(score);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		    
+		
 				
 	}
 }
