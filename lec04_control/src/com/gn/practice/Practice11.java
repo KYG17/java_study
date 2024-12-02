@@ -9,7 +9,7 @@ public class Practice11 {
 	
 		String str = sc.nextLine();
 		for(int i = 0 ; i < str.length(); i++) {
-			if(str.charAt(i)!=' ') {
+			if(str.charAt(i)==' ') {
 				continue;
 			}
 			System.out.print(str.charAt(i));

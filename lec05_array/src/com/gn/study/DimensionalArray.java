@@ -60,10 +60,108 @@ public class DimensionalArray {
 		// (3) 초기화 : Heap의 값 변경
 		and[0] = 90;
 		
+		//7. 배열의 출력
+		// (1) 인덱스를 이용한 출력
+		System.out.println(age1[1]);
+		
+		// (2) 반복문을 이용한 출력
+		String[] fruits = {"딸기", "체리", "포도"};
+		for(int i = 0 ; i < fruits.length ; i++) {
+			System.out.println(fruits[i]);
+		}
+		// 8. toCharArray
+		String text = "Hello World";
+		char[] charArr = text.toCharArray();
+		for(int i = 0 ; i < charArr.length ; i++) {
+			System.out.println(charArr[i]);
+		}
 		
 		
+		// vs charAt(i)
+		text = "안녕하세요.";
+		for(int i = 0 ; i < text.length() ;i++) {
+			System.out.println(text.charAt(i));
+		}
+		
+		//9. for each문
+		int[] numbers = {1,2,3,4,5};
+		for(int i = 0 ; i < numbers.length ; i++) {
+			System.out.println(numbers[i]);
+		}
+		for(int num:numbers) {
+			System.out.println(num);
+		}
+		
+		//10. 배열의 활용(1) - 총합과 평균
+		int[] sus = {83, 90, 100, 100, 50};
+		int sum = 0 ;
+		for(int su : sus) {
+			sum = sum + su;
+		}
+		System.out.println(sum);
+		System.out.println((double)sum/5);
+		
+		//11. 배열의 활용(2) = 최대값과 최소값
+		int[] arr = {8,9,10,4,10};
+		//최대값
+		int max = arr[0];
+		for(int i = 0 ; i < arr.length ; i++) {
+			if(arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		System.out.println("최대값 : " + max);
+		
+		//최소값
+		int min = arr[0];
+		for(int i = 0 ; i < arr.length ; i++) {
+			if(arr[i] < min) {
+				min = arr[i];
+			}
+		}
+		System.out.println("최소값 : " + min);
+		
+		// 12. 배열의 활용(3) : 오름차순, 내림차순
+		
+		int[] data = {8,4,1,3};
+		// 인덱스 기준으로 : 0 번과 1번 비교 -> 4, 8, 1, 3
+		// 인덱스 기준으로 : 0 번과 2번 비교 -> 1, 8, 4, 3
+		// 0번과 3번 비교 -> 1,8,4,3
+		// 1번과 2번 비교 -> 1,4,8,3
+		// 1번과 3번 비교 -> 1,3,8,4
+		// 2번과 3번 비교 -> 1,3,4,8
+		
+		//0 -> 1,2,3
+		//1 -> 2,3
+		//2 -> 3
+		for(int i = 0; i < data.length ; i++) {
+			for(int j = i+1 ; j < data.length ; j++) {
+				//System.out.println(i+" : " + j);
+				if(data[i] > data[j]) {
+					int temp = data[i];
+					data[i] = data[j];
+					data[j] = temp;
+				}
+			}
+		}
+		for( int d : data) {
+			System.out.print(d+", ");
+		}
+		// 1,3,4,8
+		// 0번이랑 1번을 비교 : 3,1,4,8
+		// 0번이랑 2번을 비교 : 4,1,3,8
+		// 0번이랑 3번을 비교 : 8,1,3,4
+		// 1번이랑 2번을 비교 : 8,3,1,4
+		// 1번이랑 3번을 비교 : 8,4,1,3
+		// 2번이랑 3번을 비교 : 8,4,3,1
+		
+			}
 		
 
 	}
+	
+	
+	
+	
 
-}
+
