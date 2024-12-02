@@ -12,7 +12,7 @@ public class Practice11 {
 			if(str.charAt(i)!=' ') {
 				continue;
 			}
-			System.out.print(i);
+			System.out.print(str.charAt(i));
 		}
 		
 	}

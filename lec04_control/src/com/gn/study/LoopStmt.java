@@ -105,7 +105,7 @@ public class LoopStmt {
 				System.out.println(i);
 				
 				String str = "김철수";
-				for(int x = 0 ; i < str.length() ; x++) {
+				for(int x = 0 ; x < str.length() ; x++) {
 					System.out.println(str.charAt(x));
 				}
 				
