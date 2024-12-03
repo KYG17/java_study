@@ -23,10 +23,6 @@ public class Homework01 {
 
 		//boolean test1 = a.equals(b);
 
-		
-
-		
-
 		if(a.equals(b)) {
 
 			as="온다";

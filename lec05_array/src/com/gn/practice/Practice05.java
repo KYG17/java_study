@@ -14,13 +14,12 @@ public class Practice05 {
 		System.out.print("길동이 : ");
 		int a = sc.nextInt();
 		
-		
 		int[] scores = {54,23};
 		int[] scores1 = new int[scores.length+1];
 		for(int i = 0 ; i < scores.length ; i++) {
 			scores1[i] = scores[i];
 		}
-		scores1 [2] = 81;
+		scores1 [2] = a;
 		for(int num1 : scores) {
 			System.out.print(num1+" ");
 		}
