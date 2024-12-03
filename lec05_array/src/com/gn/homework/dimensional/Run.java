@@ -12,6 +12,13 @@ public class Run {
 		
 		Scanner sc = new Scanner(System.in);
 		int menu = sc. nextInt();
+		
+		switch(menu) {
+		case 1 : practice.practice01();
+			break;
+		}
+		sc.close();
 	}
+	
 
 }
