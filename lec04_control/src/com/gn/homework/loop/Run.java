@@ -15,7 +15,7 @@ public class Run {
 		int menu = sc. nextInt();
 		
 		switch(menu) {
-		case 1 : practice.practice02();
+		case 2 : practice.practice02();
 			break;
 		}
 		sc.close();

@@ -1,6 +1,7 @@
 package com.gn.study.controller;
 
 import com.gn.study.model.vo.Dog;
+import com.gn.study.model.vo.Flower;
 import com.gn.study.model.vo.Juice;
 import com.gn.study.model.vo.Pizza;
 
@@ -20,6 +21,23 @@ public class Run {
 		Pizza p = new Pizza();
 		p.printReaction();
 		
+		
+		Flower f1 = new Flower("장미","빨강색");
+		Flower f2 = new Flower("장미", "빨강색");
+//		if(f1.equals(f2));{
+//			System.out.println("똑같아요");
+//		}else{
+//			System.out.println("x");
+//		}
+		
+		System.out.println(f1);
+		
+		
+		
+			
 	}
-
 }
+
+	
+
+
