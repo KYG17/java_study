@@ -11,6 +11,20 @@ public class Point {
 		this.y = y;
 	}
 	
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
+	
+	public void setX(int x) {
+		this.x=x;
+	}
+	public void sexY(int Y) {
+		this.x=y;
+	}
+	
 	public void draw() {
 		System.out.println("(x,y): ("+x+","+y+")" );
 	}

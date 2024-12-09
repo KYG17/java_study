@@ -1,7 +1,6 @@
 package com.gn.practice03.run;
 
 import com.gn.practice03.model.vo.Circle;
-import com.gn.practice03.model.vo.Point;
 import com.gn.practice03.model.vo.Rectangle;
 
 public class Run {
@@ -27,15 +26,16 @@ public class Run {
 		 
 		 // 각 도형의 draw 메소드 실행(for each) 
 		
-		}
+		
+	}
 		
 		
-		}
+}
 		
 		
 		
 //		Point a = new Point(1 ,2);
 //		a.draw();
-	}
+	
 
 
