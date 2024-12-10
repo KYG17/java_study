@@ -1,6 +1,7 @@
 package com.gn.study.method.model.vo;
 // 음료수의 설계도
 public class Soda {
+	
 	public String name;
 	public int price;
 	

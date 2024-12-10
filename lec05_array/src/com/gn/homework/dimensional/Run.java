@@ -16,6 +16,8 @@ public class Run {
 		switch(menu) {
 		case 1 : practice.practice01();
 			break;
+		case 2 : practice.practice02();
+			break;
 		}
 		sc.close();
 	}
