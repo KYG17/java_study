@@ -17,14 +17,14 @@ public class Yong {
 	
 	}
 	public String apple(String a , String b) {
-		if(a.equals(b)) {
-			System.out.println("true");
-		}else {
+		return a+b;
+		
+			
+
 			
 
 	}	
+}	
 	
-		
 	
 
-}

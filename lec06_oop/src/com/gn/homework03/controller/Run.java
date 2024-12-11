@@ -10,6 +10,9 @@ public class Run {
 		
 		int num = a.multiple(6, 3); // 18
 		System.out.println(num); // int
+		
+		
+		
 		 
 
 
