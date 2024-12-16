@@ -7,7 +7,7 @@ public class ToDoListChecker {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
 		
-		//1.리스타가 비어있는지 확인
+		//1.리스트가 비어있는지 확인
 		if(list.isEmpty()) { //비어있습니까?!
 			System.out.println("할 일이 아직 없습니다"); // true의 값
 		}
@@ -16,7 +16,7 @@ public class ToDoListChecker {
 		list.add("운동하기");
 		list.add("책을 읽자");
 		
-		
+	
 		//3. 특정 항목 확인
 		if(list.contains("코딩 공부하기")) { //리스트 안에 코딩 공부하기 항목이 있니?
 			System.out.println("O");
