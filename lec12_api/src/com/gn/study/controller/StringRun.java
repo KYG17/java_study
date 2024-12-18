@@ -100,6 +100,32 @@ public class StringRun {
 			str = str.toUpperCase();
 		}
 		System.out.println(str);
+		
+		//valueOf
+		double pi = 3.14;
+		String piStr = String.valueOf(pi);
+		System.out.println(piStr);
+		
+		//StringBuilder
+		StringBuilder sb = new StringBuilder("Hello");
+		sb.append("World!!");
+		System.out.println(sb);
+		
+		sb.insert(5, " java ");
+		System.out.println(sb);
+		
+		sb.delete(11, 16+1);
+		System.out.println(sb);
+		
+		int idx = sb.indexOf("!"); //느낌표 지우고 싶어요
+		sb.deleteCharAt(idx);
+		System.out.println(sb);
+		
+		sb.reverse();
+		System.out.println(sb);
+		
+		
+		
 	
 	}
 

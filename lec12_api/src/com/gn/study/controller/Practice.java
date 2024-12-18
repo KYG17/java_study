@@ -1,18 +1,17 @@
 package com.gn.study.controller;
 
 public class Practice {
-	public static void main(String[] args) {
-//		String test = "우리는";
-//		test = test +"할수있다";
-//		System.out.println(test);
-		
-		String str = "봄-여름-가을-겨울";
-		String[] seasons = str.split("-");
-		for(String season : seasons) {
-			String test = season;
-			test += season;
-			System.out.print(test);
-		}
+	// 매개변수로 전달받은 문자열을
+	// StringBuillder에 append 해서
+	// 문자열을 반환하는 메소드
+	public String test(String str) {
+		StringBuilder sb = new StringBuilder("test");
+		sb.append(str);
+		return sb.toString();
 	}
+	
 
-}
+		}
+	
+
+

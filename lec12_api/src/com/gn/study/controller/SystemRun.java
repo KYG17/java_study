@@ -23,6 +23,8 @@ public class SystemRun {
 		
 		long after = System.currentTimeMillis();
 		System.out.println((after-before) + "밀리초 걸림");
+	
+		}
 	}
 
-}
+
