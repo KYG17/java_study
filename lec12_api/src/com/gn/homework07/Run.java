@@ -23,17 +23,20 @@ public class Run {
 		
 		Scanner sc = new Scanner(System.in);
 		int b = 0;
-		while(true) {
-		System.out.print("1~100 사이의 임의 난수를 맞춰보세요 : ");
-		int a = sc.nextInt();
+		System.out.println("1~100 사이의 임의 난수를 맞춰보세요 ");
 		int rnd = (int)(Math.random()*100-1+1)+1;
+		System.out.println(rnd);
+		while(true) {
+		System.out.println("숫자를 입력하세요 : ");
+		int a = sc.nextInt();
 		if(a < rnd) {
 			System.out.println("UP!");
-			b++;
+			b = b+1;
 		}else if (a > rnd){
 			System.out.println("DOWN!");
-			b++;
+			b = b + 1;
 		}else {
+			b++;
 			System.out.println("정답입니다");
 			System.out.println(b + "회 만에 맞추셨습니다");
 			break;

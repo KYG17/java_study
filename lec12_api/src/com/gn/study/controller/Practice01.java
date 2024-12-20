@@ -1,19 +1,22 @@
 package com.gn.study.controller;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.io.File;
+import java.io.IOException;
 
 public class Practice01 {
 	public static void main(String[] args) {
-		Calendar cal7 = Calendar.getInstance();
-		cal7.add(Calendar.DATE, 1); //25년을 만들고 싶어요
-		Date date = cal7.getTime();
-		SimpleDateFormat sdf2 = new SimpleDateFormat("yy-MM-dd a KK:mm");
-//		sdf2 = new SimpleDateFormat("yyyy-MM-dd E요일 a KK:mm:ss");
-		System.out.println(sdf2.format(date));
-
-	
+		String filePath1 = "C:\\parentDir\\childDir\\exampleFile.txt";
+		File file1 = new File(filePath1);
+		try {
+		    if (file1.createNewFile()) { 
+		        System.out.println("파일 생성 성공");
+		    } else { 
+		        System.out.println("이미 존재하는 파일");
+		    }
+		} catch (IOException e) {
+		    System.out.println("파일 생성 중 오류 발생");
+		    e.printStackTrace();
+		}
 
 	}
 
