@@ -48,7 +48,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "==="+name+"==="+"\n" +
+		return  "이름 : " + name + "\n"+
 				"나이 : " + age +"\n" +
 				"키 : " + height +"\n" +
 				"몸무게 : " + weight +"\n";

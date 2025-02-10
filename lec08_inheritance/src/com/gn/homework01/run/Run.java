@@ -2,6 +2,7 @@ package com.gn.homework01.run;
 
 import java.util.Scanner;
 
+import com.gn.homework01.model.vo.Employee;
 import com.gn.homework01.model.vo.Student;
 
 public class Run {
@@ -18,6 +19,39 @@ public class Run {
 		System.out.println(s);
 	}
 	
+	Employee[] arr1 = new Employee[10];
+	int count = 0;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("===사원 입력 받기===");
+	while(true) {
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		System.out.print("나이 ");
+		int age = sc.nextInt();
+		System.out.print("키 : ");
+		double height = sc.nextDouble();
+		System.out.print("몸무게 : ");
+		double weight = sc.nextDouble();
+		System.out.print("급여 : ");
+		int salary = sc.nextInt();
+		sc.nextLine();
+		System.out.print("부서 : ");
+		String dept = sc.nextLine();
+		arr1[count++] = new Employee(name,age,height,weight,salary,dept);
+		
+		System.out.print("계속 추가하시겠습니까 ? ");
+		String answer = sc.nextLine();
+		
+		if("N".equals(answer)||"n".equals(answer)) {
+			break;
+			}
+		}
+	
+	
+		for(int i = 0 ; i < count ; i++) {
+		System.out.println(arr1[i].toString());
+			
+	}
 	
 	
 	
